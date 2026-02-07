@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: checkout repo
-      uses: actions/checkout@v3
+      uses: actions/checkout
     - name: Set up Python 3.11
       uses: actions/setup-python@v5
       with:
@@ -19,5 +19,6 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install -r requirements.txt
+
 
 
